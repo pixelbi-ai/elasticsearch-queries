@@ -1,1 +1,13 @@
-<h1></h1>
+<h1 id="elasticsearch-queries">Elasticsearch Queries</h1>
+<h3 id="retrieved-specific-fields">Retrieved specific fields</h3>
+<p>This query retrives only first_name, last_name and city field inside address object</p>
+<pre><code>GET <span class="hljs-string">localhost:</span><span class="hljs-number">9200</span><span class="hljs-regexp">/users/</span>_search
+
+{
+    <span class="hljs-string">"_source"</span>: [
+        <span class="hljs-string">"first_name"</span>,
+        <span class="hljs-string">"last_name"</span>,
+        <span class="hljs-string">"address.city"</span>
+    ]
+}
+</code></pre>
