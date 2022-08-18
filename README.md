@@ -2,7 +2,7 @@
 
 ### Retrieved specific fields
 
-Query retrives only first_name, last_name and city field inside address object
+This query retrives only first_name, last_name and city field inside address object
 ```
 GET localhost:9200/users/_search
 
