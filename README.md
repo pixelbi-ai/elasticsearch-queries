@@ -14,3 +14,5 @@ GET localhost:9200/users/_search
     ]
 }
 ```
+
+### Retrieve a runtime field
